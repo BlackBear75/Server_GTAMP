@@ -9,9 +9,5 @@ public class RemoteEvents:Script
         player.Position = new Vector3 (posX, posY, posZ);
     }
 
-    [Event("OnPlayerQuit")]
-    public void OnPlayerQuit(Player player)
-    {
-        NAPI.Chat.SendChatMessageToAll($"Player {player.Name} has left the server.");
-    }
+ 
 }
